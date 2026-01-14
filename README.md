@@ -1,1 +1,1 @@
-used for study of MISRAC 2012
+used for the study of MISRAC 2012

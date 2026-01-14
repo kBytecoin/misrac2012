@@ -4,6 +4,12 @@
 
 #define MAX(a,b) (a>b) ? a:b
 
+int ADD(const int a,const int b);
+int ADD(const int a,const int b){
+    return a+b;
+}
+
+
 int main(){
 #if 0
     printf("*****************test1*****************\n");
@@ -45,7 +51,7 @@ int main(){
     char value6=value5+1U;
     printf("%c",value6);
 
-#endif
+
     printf("*****************test6*****************\n");
     unsigned int const value7=10;
     int value8=7;
@@ -60,6 +66,11 @@ int main(){
         printf("-%d",(unsigned int)(abs(value8))-value7);
     }
 
+
+#endif
+    printf("*****************test7*****************\n");
+    int (*p)(const int a,const int b)=&ADD;
+    printf("%d",ADD(1,2));
 
 
 
