@@ -67,13 +67,19 @@ int main(){
     }
 
 
-#endif
+
     printf("*****************test7*****************\n");
     int (*p)(const int a,const int b)=&ADD;
     printf("%d",ADD(1,2));
 
-
-
+#endif
+    printf("*****************test8*****************\n");
+    int arr[2]={0,1};
+    int* p=arr;
+    int* q=&arr[1];
+    if(q>p){
+        printf("true");
+    }
 
 
 
