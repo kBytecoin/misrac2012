@@ -74,11 +74,11 @@ int main(){
 
 #endif
     printf("*****************test8*****************\n");
-    int arr[2]={0,1};
-    int* p=arr;
-    int* q=&arr[1];
+    int arr[2]={1,0};
+    int *p=&arr[0];
+    int *q=&arr[1];
     if(q>p){
-        printf("true");
+        printf("%d",q-p);
     }
 
 
